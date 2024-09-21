@@ -2,37 +2,149 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.site-icon {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  width: 40px;
+  height: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  margin: 20px;
+}
+
+
+.home-container {
+  text-align: center;
+  padding: 50px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container {
+  margin-top: 20px;
+}
+
+
+.projects-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%; /* Each box will take up 30% of the width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  margin: 10px 0;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.services-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.neural-network {
+  position: relative;
+  margin-top: 20px;
+}
+
+.network-image {
+  width: 100%;
+  max-width: 600px; /* Adjust as necessary */
+  margin: 0 auto;
+}
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 50%; /* Center the icons vertically */
+  left: 50%; /* Center the icons horizontally */
+  transform: translate(-50%, -50%); /* Center the icons */
+}
+
+.skill {
+  margin: 10px;
+  text-align: center;
+}
+
+.skill-icon {
+  width: 50px; /* Adjust icon size */
+  height: 50px; /* Adjust icon size */
+}
+
+h1, p {
+  margin-bottom: 20px;
 }
