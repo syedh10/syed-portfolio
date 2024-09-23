@@ -1,11 +1,16 @@
 /* 
   File Name: Projects.js
-  Student Name: Syed Hussian
+  Student Name: Syed Hussain
   Student ID: 301404466
   Date: Sept 23 2024
 */
 
 import React from 'react';
+
+/* 
+  This functional component displays a grid of project cards, 
+  each containing an image, description, and GitHub link.
+*/
 
 function Projects() {
   return (

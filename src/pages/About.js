@@ -1,8 +1,13 @@
 /* 
   File Name: About.js
-  Student Name: Syed Hussian
+  Student Name: Syed Hussain
   Student ID: 301404466
   Date: Sept 23 2024
+*/
+
+/* 
+  This functional component renders the About page, showcasing personal information,
+  including background, skills, and a link to download the resume.
 */
 
 import React from 'react';
@@ -12,14 +17,14 @@ function About() {
     <div className="about-container">
       <h1>Syed Hussain</h1>
       
-      {/* Image of Syed Hussain */}
+      {/* Image */}
       <img
-  src="1.png" // Replace with the actual path to your image
+  src="1.png" 
   alt="Syed Hussain"
-  className="about-profile-image" // Renamed class
+  className="about-profile-image"
 />
       
-      {/* Short paragraph about Syed */}
+      {/* Short paragraph*/}
       <p>
         I'm a passionate React developer with experience in building dynamic and responsive web applications. <br />
         I enjoy solving complex problems and learning new technologies that enhance user experiences. <br />

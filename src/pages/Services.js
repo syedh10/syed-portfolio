@@ -1,11 +1,16 @@
 /* 
   File Name: Services.js
-  Student Name: Syed Hussian
+  Student Name: Syed Hussain
   Student ID: 301404466
   Date: Sept 23 2024
 */
 
 import React from 'react';
+
+/* 
+  This functional component renders the Services page, showcasing different categories of services offered, 
+  including frontend development, backend development, AI & machine learning, and development tools expertise.
+*/
 
 function Services() {
   return (

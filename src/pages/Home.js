@@ -1,12 +1,17 @@
 /* 
   File Name: Home.js
-  Student Name: Syed Hussian
+  Student Name: Syed Hussain
   Student ID: 301404466
   Date: Sept 23 2024
 */
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+/* 
+  Description: This functional component displays the home page, 
+  including introductory text, icons, and buttons to navigate to the About and Contact pages.
+*/
 
 function Home() {
   return (

@@ -1,6 +1,6 @@
 /* 
   File Name: Contact.js
-  Student Name: Syed Hussian
+  Student Name: Syed Hussain
   Student ID: 301404466
   Date: Sept 23 2024
 */

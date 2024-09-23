@@ -1,10 +1,11 @@
 /* 
   File Name: App.js
-  Student Name: Syed Hussian
+  Student Name: Syed Hussain
   Student ID: 301404466
   Date: Sept 23 2024
 */
 
+// Import necessary libraries
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home';
@@ -14,6 +15,10 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import './App.css';
 
+/* 
+  This functional component defines the main structure of the application. 
+  It includes the Router, navigation bar, and routing setup for different pages.
+*/
 function App() {
   return (
     <Router>
@@ -22,7 +27,7 @@ function App() {
         <nav className="navbar">
           {/* Wrap the image in a Link component */}
           <Link to="/">
-              <img src="/" alt="Site Icon" className="site-icon" />
+              <img src="logo.png" alt="Site Icon" className="site-icon" />
             </Link>
           <ul className="nav-links">
               <li><Link to="/">Home</Link></li>

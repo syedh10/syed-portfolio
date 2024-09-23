@@ -1,6 +1,6 @@
 /* 
   File Name: App.cs
-  Student Name: Syed Hussian
+  Student Name: Syed Hussain
   Student ID: 301404466
   Date: Sept 23 2024
 */
@@ -23,10 +23,10 @@ body {
 
 .site-icon {
   position: absolute;
-  top: -40px;
-  left: -20px;
-  width: 200px;
-  height: 200px;
+  top: 10px;
+  left: 10px;
+  width: 130px;
+  height: 130px;
 }
 
 nav {
