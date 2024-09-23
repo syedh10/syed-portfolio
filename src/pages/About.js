@@ -1,3 +1,10 @@
+/* 
+  File Name: About.js
+  Student Name: Syed Hussian
+  Student ID: 301404466
+  Date: Sept 23 2024
+*/
+
 import React from 'react';
 
 function About() {
@@ -7,23 +14,23 @@ function About() {
       
       {/* Image of Syed Hussain */}
       <img
-        src="/path-to-your-image.jpg" // Replace with the actual path to your image
-        alt="Syed Hussain"
-        className="profile-image"
-      />
+  src="1.png" // Replace with the actual path to your image
+  alt="Syed Hussain"
+  className="about-profile-image" // Renamed class
+/>
       
       {/* Short paragraph about Syed */}
       <p>
-        I'm a passionate React developer with experience in building dynamic and responsive web applications. 
-        I enjoy solving complex problems and learning new technologies that enhance user experiences.
-        Currently, I'm pursuing a degree in Software Engineering Technology - Artificial Intelligence and working 
-        on various projects related to AI and web development. I'm eager to leverage my skills to create impactful 
+        I'm a passionate React developer with experience in building dynamic and responsive web applications. <br />
+        I enjoy solving complex problems and learning new technologies that enhance user experiences. <br />
+        Currently, I'm pursuing a degree in Software Engineering Technology - Artificial Intelligence and working  <br />
+        on various projects related to AI and web development. I'm eager to leverage my skills to create impactful <br />
         solutions and grow professionally.
       </p>
       
       {/* Link to PDF version of the resume */}
-      <a href="/path-to-your-resume.pdf" target="_blank" rel="noopener noreferrer">
-        Download My Resume
+      <a href="resume.pdf" target="_blank" rel="noopener noreferrer" className="about-resume-button">
+         Download My Resume
       </a>
     </div>
   );

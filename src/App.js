@@ -1,3 +1,10 @@
+/* 
+  File Name: App.js
+  Student Name: Syed Hussian
+  Student ID: 301404466
+  Date: Sept 23 2024
+*/
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home';
@@ -13,7 +20,10 @@ function App() {
       <div className="App">
         <header>
         <nav className="navbar">
-          <img src="/path-to-your-icon/icon.png" alt="Site Icon" className="site-icon" />
+          {/* Wrap the image in a Link component */}
+          <Link to="/">
+              <img src="/" alt="Site Icon" className="site-icon" />
+            </Link>
           <ul className="nav-links">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About Me</Link></li>
