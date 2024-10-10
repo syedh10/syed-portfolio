@@ -8,6 +8,7 @@
 // Import necessary libraries
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Import Axios for API requests
 
 // Contact Component
 function Contact() {
@@ -21,6 +22,7 @@ function Contact() {
   });
 
   const navigate = useNavigate();
+  const [submissionStatus, setSubmissionStatus] = useState(''); // State for submission status message
 
   // Handle input changes
   const handleInputChange = (e) => {
@@ -32,11 +34,23 @@ function Contact() {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // After form submission, redirect to the Home page
-    navigate('/');
+    try {
+      const response = await axios.post('http://localhost:5000/api/contacts', {
+        firstname: formData.firstName,
+        lastname: formData.lastName,
+        email: formData.email,
+        contactNumber: formData.contactNumber,
+        message: formData.message
+      });
+      console.log('Form submitted:', response.data);
+      setSubmissionStatus('Contact submitted successfully!'); // Set success message
+      navigate('/'); // Redirect after successful submission
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmissionStatus('Failed to submit contact. Please try again.'); // Set error message
+    }
   };
 
   // Form structure
@@ -103,6 +117,8 @@ function Contact() {
 
         <button type="submit" className="submit-button">Send Message</button>
       </form>
+
+      {submissionStatus && <p>{submissionStatus}</p>} {/* Display submission status message */}
     </div>
   );
 }
